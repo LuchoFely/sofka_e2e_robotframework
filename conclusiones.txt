@@ -1,0 +1,19 @@
+Se realiza el proyecto siguiendo los siguientes criterios
+- Separación de Responsabilidades
+Pages: Lógica específica de cada página
+Data: Datos de prueba centralizados
+Keywords: Funcionalidades reutilizables
+
+- Mantenibilidad
+Cambios en selectores afectan solo un archivo
+Datos fácilmente actualizables
+Código más legible y organizado
+
+- Escalabilidad
+Fácil agregar nuevas pruebas
+Reutilización de keywords
+Estructura clara
+
+- Buenas Prácticas
+Patrón Page Object Model
+Estilo BDD (Given-When-Then)

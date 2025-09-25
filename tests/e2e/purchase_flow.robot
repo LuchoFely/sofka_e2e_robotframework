@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation    Prueba E2E de flujo de compra en Demoblaze - Estructura Mejorada
+Documentation    Prueba E2E de flujo de compra en Demoblaze
 Resource         ../../resources/data/TestData.resource
 Resource         ../../resources/pages/HomePage.resource
 Resource         ../../resources/pages/ProductPage.resource
@@ -33,17 +33,17 @@ Dado que el usuario está en la página principal
 
 Cuando agrega un teléfono al carrito
     Seleccionar Categoria    ${PHONES_CATEGORY}
-    ${producto1}=    Obtener Producto por Indice    1
+    ${producto1}=    Obtener Producto por Indice    2
     Set Test Variable    ${PRODUCTO_1}    ${producto1}
-    Seleccionar Producto por Indice    1
+    Seleccionar Producto por Indice    2
     Agregar Producto al Carrito
     Navegar a Home
 
 Y agrega una laptop al carrito
     Seleccionar Categoria    ${LAPTOPS_CATEGORY}
-    ${producto2}=    Obtener Producto por Indice    1
+    ${producto2}=    Obtener Producto por Indice    2
     Set Test Variable    ${PRODUCTO_2}    ${producto2}
-    Seleccionar Producto por Indice    1
+    Seleccionar Producto por Indice    2
     Agregar Producto al Carrito
 
 Y navega al carrito de compras

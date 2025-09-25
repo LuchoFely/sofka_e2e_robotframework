@@ -8,6 +8,17 @@ ${CART_ITEMS}            xpath=//tbody/tr
 ${PLACE_ORDER_BUTTON}    xpath=//button[contains(text(),'Place Order')]
 ${ITEM_NAME}             xpath=//td[2]
 
+
+# Título del carrito (versión estable)
+#${CART_TITLE}            css=h2#cart-title
+# Ítems del carrito (evita filas de totales/encabezados)
+#${CART_ITEMS}            css=tr.cart-item:not(.total-row)
+# Botón "Place Order" con selector único
+#${PLACE_ORDER_BUTTON}    css=button[data-target='#orderModal']
+# Nombre del producto (sin depender de posición de columna)
+#${ITEM_NAME}             css=td.item-name
+
+
 *** Keywords ***
 Verificar Producto en Carrito
     [Arguments]    ${nombre_producto}
