@@ -17,6 +17,7 @@ ${PAGE_CONTAINS_TEXT}     PRODUCT STORE  # Texto para verificación
 Navegar a Home
     [Documentation]    Navega a la página principal
     Click Element    ${HOME_NAVBAR}
+    Sleep   1s
     Wait Until Page Contains    ${PAGE_CONTAINS_TEXT}    timeout=15s
     Log    ✓ Página principal cargada
 
@@ -25,6 +26,7 @@ Seleccionar Categoria
     [Documentation]    Selecciona una categoría de productos
     Wait Until Element Is Visible    ${categoria}    timeout=15s
     Click Element    ${categoria}
+    Sleep   1s
     Wait Until Element Is Visible    ${PRODUCTOS_LISTA}    timeout=15s
 
 Obtener Producto por Indice
@@ -40,3 +42,4 @@ Seleccionar Producto por Indice
     [Documentation]    Selecciona un producto por su índice
     ${locator}=    Set Variable    xpath=(//a[@class='hrefch'])[${indice}]
     Click Element    ${locator}
+    Sleep   1s

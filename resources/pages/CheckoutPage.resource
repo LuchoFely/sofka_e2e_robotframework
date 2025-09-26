@@ -34,3 +34,4 @@ Confirmar Compra
     Wait Until Page Contains    Thank you for your purchase!    30s
     Page Should Contain Element    ${OK_BUTTON}
     Click Button    ${OK_BUTTON}
+    Sleep   1s

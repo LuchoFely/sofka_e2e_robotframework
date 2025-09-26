@@ -36,3 +36,4 @@ Iniciar Checkout
     [Documentation]    Inicia el proceso de checkout
     Wait Until Element Is Visible    ${PLACE_ORDER_BUTTON}    timeout=10s
     Click Button    ${PLACE_ORDER_BUTTON}
+    Sleep   1s

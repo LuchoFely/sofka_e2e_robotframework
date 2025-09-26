@@ -12,6 +12,7 @@ Agregar Producto al Carrito
     [Documentation]    Agrega el producto actual al carrito
     Wait Until Element Is Visible    ${ADD_TO_CART_BUTTON}    timeout=10s
     Click Element    ${ADD_TO_CART_BUTTON}
+    Sleep   1s
     Manejar Alerta Producto Agregado
 
 Obtener Nombre Producto Actual
