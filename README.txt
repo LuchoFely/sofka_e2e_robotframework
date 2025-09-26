@@ -33,3 +33,5 @@ results/
 ├── log.html
 ├── report.html
 └── screenshot_*.png
+
+En la raiz se adjunta la última ejecución como evidencia "purchase_report.html"
